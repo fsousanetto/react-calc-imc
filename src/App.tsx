@@ -9,7 +9,7 @@ const App = () => {
 
   const handleCalculateButton = () => {
     if(heightField && weightField) {
-      
+
     } else {
       alert('Preencha todos os campos.')
     }
@@ -37,7 +37,7 @@ const App = () => {
 
           <input 
             type="number"           
-            placeholder='Digite a sua altura. Ex: 73.5 (em kg)'
+            placeholder='Digite o seu peso. Ex: 73.5 (em kg)'
             value={weightField > 0 ? weightField : ''}
             onChange={e => setWeightField(parseFloat(e.target.value))}
           />
