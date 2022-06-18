@@ -9,6 +9,10 @@ header .headerContainer {
     margin: 40px auto;
 }
 
+.main {
+    padding-bottom: 50px;
+}
+
 .container {
     display: flex;
     max-width: 900px;
@@ -101,4 +105,32 @@ header .headerContainer {
 
 .container .rightSide .rightArrow:hover {
     box-shadow: 0 0 0.937rem #3a4b5c;
+}
+
+@media (max-width: 770px) {
+    header {
+        padding: 0 20px;
+    }
+    .container{ 
+        padding: 0 20px;
+        flex-direction: column;
+    }
+    .container .leftSide {
+        margin-right: 0;
+    }
+    .container .rightSide {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+    .container .rightSide .rightArrow {
+        margin-left: 0;
+        margin-top: 0;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 430px) {
+    .container .rightSide .grid {
+        grid-template-columns: 1fr;
+    }
 }
